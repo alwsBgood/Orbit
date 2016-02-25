@@ -1,0 +1,36 @@
+
+.earth{ 
+    padding: 200px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+
+.moon{
+    position: absolute;
+    top:270px;
+    left: 270px;
+    animation: orbita 15s linear infinite;
+    z-index: 0
+}
+
+@keyframes orbita {
+    0%{width: 55px; left: 500px}
+    24%{z-index: 0}
+    25%{top: 450px; left: 670px;  z-index: 2}
+    50%{width: 150px;}
+    74%{z-index: 2;}
+    75%{top: 400px; left: 140px; z-index: 0 }
+    100%{width: 55px; left: 500px; transform: rotate(360deg);}
+}
+
+body {
+  background: url(../img/cosmos.jpg);
+  background-size: cover;
+}
+
+
